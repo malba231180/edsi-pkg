@@ -1,5 +1,5 @@
 {
-  "name": "edsi-pkg",
+  "name": "@malba231180/edsi-pkg",
   "version": "1.0.0",
   "description": "EDSI template",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/malba231180/edsi-pkg/issues"
   },
-  "homepage": "https://github.com/malba231180/edsi-pkg#readme"
+  "homepage": "https://github.com/malba231180/edsi-pkg#readme",
+  "dependencies": {
+    "@malba231180/npm-pkg": "1.0.0"
+  }
 }
