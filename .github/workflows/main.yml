@@ -18,10 +18,6 @@ jobs:
         with:
           node-version: 'lts/*'
           registry-url: 'https://npm.pkg.github.com/malba231180/npm-pkg'
-      - name: Set NPM Registry
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ NODE_AUTH_TOKEN }}" > .npmrc
-          echo "@malba231180:registry=https://npm.pkg.github.com/" >> .npmrc
       - name: ci
         run: npm ci
       - name: GitHub Release
