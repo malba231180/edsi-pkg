@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 'lts/*'
-          registry-url: 'https://registry.npmjs.org/malba231180/npm-pkg'
+          registry-url: 'https://registry.npmjs.org/malba231180npm/npm-pkg'
       - name: list
         run: npm config ls -l
       - name: Install dependencies
@@ -25,7 +25,7 @@ jobs:
       - name: ci
         run: npm ci
       - name: GitHub Release
-        run: npm publish --userconfig /npm-pkg/.npmrc --registry=https://registry.npmjs.org/malba231180/npm-pkg
+        run: npm publish --userconfig /npm-pkg/.npmrc --registry=https://registry.npmjs.org/malba231180npm/npm-pkg
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ENV_PKG_90 }}
       - name: Setup Node.js for NPM
