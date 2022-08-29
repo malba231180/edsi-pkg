@@ -1,5 +1,5 @@
 {
-  "name": "@malba231180/edsi-pkg",
+  "name": "edsi-pkg",
   "version": "1.0.0",
   "description": "EDSI template",
   "main": "index.js",
