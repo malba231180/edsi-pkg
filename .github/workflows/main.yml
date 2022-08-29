@@ -22,8 +22,6 @@ jobs:
         run: |
           echo "//npm.pkg.github.com/:_authToken=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" > .npmrc
           echo "@malba231180:registry=https://npm.pkg.github.com/" >> .npmrc
-      - name: list
-        run: npm config ls -l
       - name: ci
         run: npm ci
       - name: GitHub login
