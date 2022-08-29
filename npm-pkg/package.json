@@ -1,5 +1,5 @@
 {
-  "name": "npm-pkg",
+  "name": "@malba231180/npm-pkg",
   "version": "1.0.0",
   "description": "EDSI package",
   "main": "index.js",
