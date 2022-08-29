@@ -1,0 +1,19 @@
+{
+  "name": "edsi-pkg",
+  "version": "1.0.0",
+  "description": "EDSI template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://malba231180@github.com/malba231180/edsi-pkg.git"
+  },
+  "author": "TTI Groups",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malba231180/edsi-pkg/issues"
+  },
+  "homepage": "https://github.com/malba231180/edsi-pkg#readme"
+}
