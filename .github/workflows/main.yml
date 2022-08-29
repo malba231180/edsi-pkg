@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: 'lts/*'
           registry-url: 'https://npm.pkg.github.com/malba231180/npm-pkg'
+      - run:
+        name: Set NPM Registry
+        command:|
+          echo "//npm.pkg.github.com/:_authToken=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" > .npmrc
+          echo "@malba231180:registry=https://npm.pkg.github.com/" >> .npmrc
       - name: list
         run: npm config ls -l
       - name: Install dependencies
@@ -25,7 +30,9 @@ jobs:
       - name: ci
         run: npm ci
       - name: GitHub Release
-        run: npm publish --userconfig=/npm-pkg/.npmrc --registry=https://npm.pkg.github.com/malba231180/npm-pkg
+        run: npm login --scope=@malba231180 --registry=https://npm.pkg.github.com
+      - name: GitHub Release
+        run: npm publish --userconfig /npm-pkg/.npmrc --registry=https://npm.pkg.github.com/malba231180/npm-pkg
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Node.js for NPM
