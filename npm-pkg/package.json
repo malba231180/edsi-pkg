@@ -12,6 +12,6 @@
     "pkg": "^5.8.0"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/malba231180"
+    "registry": "https://npm.pkg.github.com/malba231180"
   }
 }
