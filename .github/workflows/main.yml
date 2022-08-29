@@ -24,10 +24,8 @@ jobs:
           echo "@malba231180:registry=https://npm.pkg.github.com/" >> .npmrc
       - name: ci
         run: npm ci
-      - name: GitHub login
-        run: npm login --userconfig=.npmrc --scope=@malba231180 --registry=https://npm.pkg.github.com
       - name: GitHub Release
-        run: npm publish --userconfig=/npm-pkg/.npmrc --registry=https://npm.pkg.github.com/malba231180/npm-pkg
+        run: npm publish --userconfig=.npmrc --registry=https://npm.pkg.github.com/malba231180/npm-pkg
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Node.js for NPM
