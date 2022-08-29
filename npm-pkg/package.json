@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tti Groups",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pkg": "^5.8.0"
+  }
 }
