@@ -21,7 +21,7 @@ jobs:
       - name: Set NPM Registry
         run: |
           echo "//npm.pkg.github.com/:_authToken=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" > .npmrc
-          echo "@malba231180dddddd:registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "@malba231180:registry=https://npm.pkg.github.com/" >> .npmrc
       - name: ci
         run: npm ci
       - name: GitHub Release
@@ -34,6 +34,6 @@ jobs:
           node-version: 'lts/*'
           registry-url: 'https://registry.npmjs.org'
       - name: NPM Release
-        run: npm publish --userconfig /npm-pkg/.npmrc --registry=https://registry.npmjs.org
+        run: npm publish --userconfig=/npm-pkg/.npmrc --registry=https://registry.npmjs.org
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ENV_PKG_90 }}
