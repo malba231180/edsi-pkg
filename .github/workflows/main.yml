@@ -25,7 +25,7 @@ jobs:
       - name: ci
         run: npm ci
       - name: GitHub Release
-        run: npm publish --userconfig /npm-pkg/.npmrc --registry=https://npm.pkg.github.com/
+        run: sudo npm publish --userconfig /npm-pkg/.npmrc --registry=https://npm.pkg.github.com/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Node.js for NPM
