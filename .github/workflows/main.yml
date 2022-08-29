@@ -18,9 +18,8 @@ jobs:
         with:
           node-version: 'lts/*'
           registry-url: 'https://npm.pkg.github.com/malba231180/npm-pkg'
-      - run:
-        name: Set NPM Registry
-        command:|
+      - name: Set NPM Registry
+        run: |
           echo "//npm.pkg.github.com/:_authToken=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" > .npmrc
           echo "@malba231180:registry=https://npm.pkg.github.com/" >> .npmrc
       - name: list
