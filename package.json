@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/malba231180/edsi-pkg/issues"
   },
-  "homepage": "https://github.com/malba231180/edsi-pkg#readme",
-  "dependencies": {
-    "@malba231180/npm-pkg": "1.0.0"
-  }
+  "homepage": "https://github.com/malba231180/edsi-pkg#readme"
 }
